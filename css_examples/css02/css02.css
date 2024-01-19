@@ -3,6 +3,12 @@
 	position: absolute;
 	justify-content: center;
 }
+.parent {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+}
+
 .pic img {
 	position: relative;
 	z-index: 2;	
