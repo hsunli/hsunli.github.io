@@ -15,3 +15,18 @@
     color: #0F0DF4;
     background-color: #61F307;
 }
+#cpation img {
+    -webkit-box-shadow: 15px 15px 0px #2E2C2C;
+    box-shadow: 15px 15px 0px #2E2C2C;
+}
+.title2 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(../image/CoffceShop02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(0 0 0 / 0);
+    font-size: 200px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
