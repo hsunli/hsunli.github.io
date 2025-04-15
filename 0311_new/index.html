@@ -1,36 +1,125 @@
 <!DOCTYPE html>
 
-<html lang="zh-Hant">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>唐詩三百首</title>
+    <title>ALISAI'S WEBSITE</title>
+    <!-- 引入 Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <!-- 引入 Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+    <!-- 設定字型樣式 -->
+	<style>
+		.lxgw-wenkai-tc-regular {
+			font-family: "LXGW WenKai TC", cursive;
+			font-weight: 400;
+			font-style: normal;
+		}        
+	</style>
 </head>
 
-<body align="center">
+<body class="lxgw-wenkai-tc-regular">
 
-    <img src="img/wing.png" width="256">
+    <!-- Bootstrap 的 Navbar 元件 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- LOGO -->
+            <a class="navbar-brand" href="https://www.ntue.edu.tw"><img src="img/logo.jpg" width="64" height="64"></a>
+            <!-- 三條線 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 導覽列內容 -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Aboyt</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Homeworks
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">0408</a></li>
+                            <li><a class="dropdown-item" href="#">0401</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <!-- 右側的搜尋欄位 -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-    <h1>李 白。將 進 酒</h1>    
-    
-    <pre>
-        君 不 見 黃 河 之 水 天 上 來，奔 流 到 海 不 復 回，
-        君 不 見 高 堂 明 鏡 悲 白 髮，朝 如 青 絲 暮 成 雪。
-        人 生 得 意 須 盡 歡，莫 使 金 樽 空 對 月。
-        天 生 我 材 必 有 用，千 金 散 盡 還 復 來。
-        烹 羊 宰 牛 且 為 樂，會 須 一 飲 三 百 杯。
-        岑 夫 子，丹 邱 生，
-        將 進 酒，杯 莫 停。
-        與 君 歌 一 曲，請 君 為 我 傾 耳 聽。
-        鐘 鼓 饌 玉 不 足 貴，但 願 長 醉 不 願 醒。
-        古 來 聖 賢 皆 寂 寞，唯 有 飲 者 留 其 名。
-        陳 王 昔 時 宴 平 樂，斗 酒 十 千 恣 歡 謔。
-        主 人 何 為 言 少 錢，徑 須 沽 取 對 君 酌。
-        五 花 馬 ，千 金 裘，
-        呼 兒 將 出 換 美 酒，與 爾 同 消 萬 古 愁。
-    </pre>
+
+    <!-- Content -->
+    <div class="container">
+
+        <div class="card">
+            <img src="img/wing.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">李 白。將 進 酒</h5>
+              <p class="card-text text-center">
+                君 不 見 黃 河 之 水 天 上 來，奔 流 到 海 不 復 回，
+                君 不 見 高 堂 明 鏡 悲 白 髮，朝 如 青 絲 暮 成 雪。
+                人 生 得 意 須 盡 歡，莫 使 金 樽 空 對 月。
+                天 生 我 材 必 有 用，千 金 散 盡 還 復 來。
+                烹 羊 宰 牛 且 為 樂，會 須 一 飲 三 百 杯。
+                岑 夫 子，丹 邱 生，
+                將 進 酒，杯 莫 停。
+                與 君 歌 一 曲，請 君 為 我 傾 耳 聽。
+                鐘 鼓 饌 玉 不 足 貴，但 願 長 醉 不 願 醒。
+                古 來 聖 賢 皆 寂 寞，唯 有 飲 者 留 其 名。
+                陳 王 昔 時 宴 平 樂，斗 酒 十 千 恣 歡 謔。
+                主 人 何 為 言 少 錢，徑 須 沽 取 對 君 酌。
+                五 花 馬 ，千 金 裘，
+                呼 兒 將 出 換 美 酒，與 爾 同 消 萬 古 愁。
+            </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+
+
+        
+    </div>
+
+
+    <!-- Footer -->
+    <div>
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2025 Copyright:
+                <a class="text-reset fw-bold" href="https://www.ntue.edu.tw">NTUE</a>
+            </div>
+        </footer>
+    </div>
 
 </body>
 
 </html>
+

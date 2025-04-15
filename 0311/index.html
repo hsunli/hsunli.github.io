@@ -1,46 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title>唐詩</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>ALISAI'S WEBSITE</title>
+    <!-- 引入 Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <!-- 引入 Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
-
+    <!-- 設定字型樣式 -->
 	<style>
 		.lxgw-wenkai-tc-regular {
 			font-family: "LXGW WenKai TC", cursive;
 			font-weight: 400;
 			font-style: normal;
-		}
+		}        
 	</style>
 </head>
 
-<body align="center">
+<body class="lxgw-wenkai-tc-regular">
 
-	<h1 align="center">李白。俠客行</h1>
+    <!-- Bootstrap 的 Navbar 元件 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- LOGO -->
+            <a class="navbar-brand" href="https://www.ntue.edu.tw"><img src="img/logo.jpg" width="64" height="64"></a>
+            <!-- 三條線 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 導覽列內容 -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Aboyt</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Homeworks
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">0408</a></li>
+                            <li><a class="dropdown-item" href="#">0401</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <!-- 右側的搜尋欄位 -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-	<img src="img/xkx.png" width="256">
 
-	<pre align="center">
-	<font class="lxgw-wenkai-tc-regular">
-趙客縵胡纓，吳鉤霜雪明。
-銀鞍照白馬，颯沓如流星。
-十步殺一人，千里不留行。
-事了拂衣去，深藏身與名。
-閒過信陵飲，脫劍膝前橫。
-將炙啖朱亥，持觴勸侯嬴。
-三杯吐然諾，五嶽倒爲輕。
-眼花耳熱後，意氣素霓生。
-救趙揮金槌，邯鄲先震驚。
-千秋二壯士，烜赫大梁城。
-縱死俠骨香，不慚世上英。
-誰能書閣下，白首太玄經。
-	</font>
-	</pre>
+    <!-- Content -->
+    <div class="container">
+
+		<div class="card">
+			<img src="img/xkx.png" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title">李白。俠客行</h5>
+			  <p class="card-text">
+				
+				趙客縵胡纓，吳鉤霜雪明。
+				銀鞍照白馬，颯沓如流星。
+				十步殺一人，千里不留行。
+				事了拂衣去，深藏身與名。
+				閒過信陵飲，脫劍膝前橫。
+				將炙啖朱亥，持觴勸侯嬴。
+				三杯吐然諾，五嶽倒爲輕。
+				眼花耳熱後，意氣素霓生。
+				救趙揮金槌，邯鄲先震驚。
+				千秋二壯士，烜赫大梁城。
+				縱死俠骨香，不慚世上英。
+				誰能書閣下，白首太玄經。
+					
+					
+				</p>
+			  <a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		  </div>
+
+
+        
+    </div>
+
+
+    <!-- Footer -->
+    <div>
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2025 Copyright:
+                <a class="text-reset fw-bold" href="https://www.ntue.edu.tw">NTUE</a>
+            </div>
+        </footer>
+    </div>
 
 </body>
 
