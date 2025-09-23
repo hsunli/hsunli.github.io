@@ -1,1 +1,291 @@
-歡迎來到ㄚ鋰師的網站
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>挖系ALISAI，絕對工呼哩哉！| 未來科技</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
+                background: linear-gradient(135deg, #000000 0%, #1d1d1f 50%, #2d2d30 100%);
+                color: #f5f5f7;
+                min-height: 100vh;
+                overflow-x: hidden;
+                position: relative;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            /* 背景動畫粒子效果 - Apple風格調整 */
+            body::before {
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: 
+                    radial-gradient(1px 1px at 20px 30px, rgba(255,255,255,0.3), transparent),
+                    radial-gradient(1px 1px at 40px 70px, rgba(0,122,255,0.3), transparent),
+                    radial-gradient(1px 1px at 90px 40px, rgba(175,82,222,0.2), transparent),
+                    radial-gradient(1px 1px at 130px 80px, rgba(255,45,85,0.2), transparent);
+                background-repeat: repeat;
+                background-size: 300px 150px;
+                animation: sparkle 30s linear infinite;
+                opacity: 0.4;
+                z-index: -1;
+            }
+
+            @keyframes sparkle {
+                0% { transform: translateY(0px); }
+                100% { transform: translateY(-100px); }
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                position: relative;
+            }
+
+            .main-title {
+                font-size: 4.5rem;
+                font-weight: 600;
+                text-align: center;
+                background: linear-gradient(135deg, #f5f5f7 0%, #007AFF 50%, #AF52DE 100%);
+                background-size: 200% 200%;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                animation: gradient-shift 4s ease-in-out infinite;
+                position: relative;
+                letter-spacing: -0.03em;
+                line-height: 1.1;
+                margin-bottom: 0.5rem;
+            }
+
+            .main-title::before {
+                content: '';
+                position: absolute;
+                top: -20px;
+                left: -20px;
+                right: -20px;
+                bottom: -20px;
+                background: linear-gradient(135deg, rgba(0,122,255,0.3), rgba(175,82,222,0.3), rgba(255,45,85,0.3));
+                background-size: 400% 400%;
+                border-radius: 20px;
+                z-index: -1;
+                filter: blur(30px);
+                opacity: 0.6;
+                animation: gradient-border 6s ease-in-out infinite;
+            }
+
+            @keyframes gradient-shift {
+                0%, 100% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+            }
+
+            @keyframes gradient-border {
+                0%, 100% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+            }
+
+            .subtitle {
+                text-align: center;
+                margin-top: 1rem;
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: #a1a1a6;
+                opacity: 0;
+                animation: fadeInUp 2s ease-out 1s forwards;
+                letter-spacing: -0.01em;
+                line-height: 1.4;
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .sci-fi-border {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                height: 70%;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                background: rgba(255, 255, 255, 0.02);
+                backdrop-filter: blur(40px);
+                -webkit-backdrop-filter: blur(40px);
+                border-radius: 30px;
+                animation: border-glow 3s ease-in-out infinite alternate;
+                box-shadow: 
+                    0 0 40px rgba(0, 122, 255, 0.1),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            }
+
+            @keyframes border-glow {
+                from { 
+                    box-shadow: 
+                        0 0 40px rgba(0, 122, 255, 0.1),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+                }
+                to { 
+                    box-shadow: 
+                        0 0 60px rgba(175, 82, 222, 0.2),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                }
+            }
+
+            .cta-button {
+                display: inline-block;
+                margin-top: 2rem;
+                padding: 12px 24px;
+                background: rgba(0, 122, 255, 0.1);
+                border: 1px solid rgba(0, 122, 255, 0.3);
+                border-radius: 980px;
+                color: #007AFF;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 1rem;
+                transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                opacity: 0;
+                animation: fadeInUp 2s ease-out 1.5s forwards;
+            }
+
+            .cta-button:hover {
+                background: rgba(0, 122, 255, 0.2);
+                border-color: rgba(0, 122, 255, 0.5);
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(0, 122, 255, 0.3);
+            }
+
+            .features {
+                position: absolute;
+                bottom: 10vh;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                gap: 3rem;
+                opacity: 0;
+                animation: fadeInUp 2s ease-out 2s forwards;
+            }
+
+            .feature-item {
+                text-align: center;
+                color: #a1a1a6;
+                font-size: 0.875rem;
+                font-weight: 400;
+            }
+
+            .feature-icon {
+                width: 40px;
+                height: 40px;
+                margin: 0 auto 0.5rem;
+                background: linear-gradient(135deg, rgba(0,122,255,0.3), rgba(175,82,222,0.3));
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+            }
+
+            /* Apple 風格的毛玻璃效果 */
+            .glass-card {
+                position: relative;
+                background: rgba(29, 29, 31, 0.72);
+                backdrop-filter: saturate(180%) blur(20px);
+                -webkit-backdrop-filter: saturate(180%) blur(20px);
+                border: 1px solid rgba(255, 255, 255, 0.125);
+                border-radius: 20px;
+                padding: 3rem;
+                margin: 2rem auto;
+                max-width: 800px;
+            }
+
+            /* 響應式設計 - Apple 風格 */
+            @media (max-width: 768px) {
+                .main-title {
+                    font-size: 3rem;
+                    margin-bottom: 0.5rem;
+                }
+                .subtitle {
+                    font-size: 1.2rem;
+                    margin-top: 0.5rem;
+                }
+                .features {
+                    flex-direction: column;
+                    gap: 1.5rem;
+                }
+                .sci-fi-border {
+                    width: 95%;
+                    height: 80%;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .main-title {
+                    font-size: 2.5rem;
+                }
+                .subtitle {
+                    font-size: 1rem;
+                }
+                .cta-button {
+                    font-size: 0.9rem;
+                    padding: 10px 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sci-fi-border"></div>
+            <div class="content">
+                <h1 class="main-title">挖系ALISAI<br>絕對工呼哩哉！</h1>
+                <p class="subtitle">突破界限，創造無限可能的科技體驗</p>
+                <a href="#" class="cta-button">立即體驗</a>
+            </div>
+        </div>
+        <div class="features">
+            <div class="feature-item">
+                <div class="feature-icon">🤖</div>
+                <div class="feature-title">AI 智能</div>
+                <div class="feature-description">最強AI技術，絕對呼哩哉！</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-title">極速體驗</div>
+                <div class="feature-description">閃電般的處理速度，工呼哩哉！</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">�</div>
+                <div class="feature-title">創新突破</div>
+                <div class="feature-description">顛覆想像的創新科技體驗。</div>
+            </div>
+        </div>
+        <div class="glass-card">
+            <h2 style="text-align: center; color: #fff; font-size: 2rem; margin-bottom: 1rem;">關於 ALISAI</h2>
+            <p style="color: #a1a1a6; line-height: 1.6;">
+                挖系ALISAI，絕對工呼哩哉！我們是一個充滿活力和創新精神的科技團隊，
+                致力於探索和實現最前沿的AI科技創新。我們的使命是將不可能變為可能，
+                為客戶提供超乎想像的智能科技體驗，讓每一個創意都能成真！
+            </p>
+        </div>
+    </body>
+</html>
