@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>個人名片 Card</title>
+    <style>
+        .card-container {
+            display: flex;
+            width: 500px;
+            height: 220px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 16px;
+            overflow: hidden;
+            background: #fff;
+            margin: 40px auto;
+        }
+        .card-text {
+            flex: 0 0 50%;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .card-text h2 {
+            margin: 0 0 12px 0;
+            font-size: 1.6em;
+            color: #333;
+        }
+        .card-text p {
+            margin: 0;
+            color: #666;
+            font-size: 1em;
+        }
+        .card-image {
+            flex: 0 0 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f5f5f5;
+        }
+        .card-image img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border: 4px solid #fff;
+            background: #eee;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card-text">
+            <h2>王小明</h2>
+            <p>網頁設計師<br>聯絡電話：0912-345678<br>電子郵件：ming@example.com</p>
+        </div>
+        <div class="card-image">
+            <img src="alisai.png" alt="個人照片">
+        </div>
+    </div>
+</body>
+</html>
