@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>名片設計</title>
+    <style>
+        body {
+            background: #f5f6fa;
+            font-family: 'Segoe UI', '微軟正黑體', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            display: flex;
+            width: 420px;
+            height: 220px;
+            background: #fff;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            border-radius: 24px;
+            overflow: hidden;
+        }
+        .card-left {
+            width: 40%;
+            background: linear-gradient(135deg, #e66114 0%, #2193b0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .avatar {
+            width: 110px;
+            height: 110px;
+            /* 正六邊形遮罩 */
+            clip-path: polygon(
+                25% 6%, 75% 6%,
+                100% 50%, 75% 94%,
+                25% 94%, 0% 50%
+            );
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .card-right {
+            width: 60%;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .name {
+            font-size: 1.6em;
+            font-weight: bold;
+            color: #2193b0;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        .title {
+            font-size: 1.1em;
+            color: #444;
+            margin-bottom: 16px;
+        }
+        .info {
+            font-size: 0.98em;
+            color: #666;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-left">
+            <div class="avatar">
+                <img src="alisai.png" alt="alisai avatar">
+            </div>
+        </div>
+        <div class="card-right">
+            <div class="name">ㄚ鋰師</div>
+            <div class="title">前端工程師 / UI設計師</div>
+            <div class="info">
+                電子郵件：hsunli@mail.ntue.edu.tw<br>
+                電話：02-2732-1104<br>
+                網站：hsunli.github.io
+            </div>
+        </div>
+    </div>
+</body>
+</html>
